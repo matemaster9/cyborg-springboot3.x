@@ -21,4 +21,12 @@ public final class SysLogger {
     public static void info(String msg, Object... args) {
         log.info(msg, args);
     }
+
+    public static void error(Object arg) {
+        log.error(String.valueOf(arg));
+    }
+
+    public static void warn(Object arg) {
+        log.error(String.valueOf(arg));
+    }
 }
