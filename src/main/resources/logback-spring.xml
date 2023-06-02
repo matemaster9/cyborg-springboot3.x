@@ -14,8 +14,12 @@
     </appender>
 
     <!-- 配置根日志级别和输出目标 -->
-    <root level="info">
+    <root level="debug">
         <appender-ref ref="console"/> <!-- 输出到控制台 -->
         <appender-ref ref="logstash"/> <!-- 输出到 Logstash -->
     </root>
+
+    <logger name="org.mastercs.cyborg" level="info">
+        <appender-ref ref="console"/>
+    </logger>
 </configuration>
